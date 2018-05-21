@@ -22,11 +22,17 @@ function logCoordinates(){
 }
 
 function checkCollision(){
-    if (puck_x >= 250 && puck_x <= 350){
+    if (puck_x >= 250 && puck_x <= 350 && puck_y >= 150 && puck_y <= 250){
         gap.style.backgroundColor = 'red';
     }
     else{
         gap.style.backgroundColor = "white";
+    }
+}
+
+function teleport(){
+    if (puck_x >= 590 && puck_y >= 390){
+        puck.style.logCoordinates('x=' + puck_x + 'y=' + puck_y)
     }
 }
 

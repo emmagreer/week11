@@ -36,6 +36,12 @@ function teleport(){
     }
 }
 
+function bigger(){
+    if (puck_x >= 590 && puck_y >= 390){
+        puck.style.logCoordinates('x=' + puck_x + 'y=' + puck_y)
+    }
+}
+
 document.getElementById('puck').style.top = puck_y + 'px';
 document.getElementById('puck').style.left = puck_x + 'px';
 
